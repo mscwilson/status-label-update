@@ -6,5 +6,5 @@ branding:
 runs:
   using: "composite"
   steps:
-    - run: bundle exec ruby ./status-label-update/lib/issue_labels.rb
+    - run: bundle exec ruby lib/issue_labels.rb
       shell: bash
