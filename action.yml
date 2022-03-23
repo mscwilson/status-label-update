@@ -6,11 +6,5 @@ branding:
 runs:
   using: "composite"
   steps:
-    - name: print pwd
-      env:
-        PWD: ${{ pwd }}
-      run: echo "$PWD"
-      shell: bash
-
-    - run: ls
+    - run: bundle exec ruby ./status-label-update/lib/issue_labels.rb
       shell: bash
