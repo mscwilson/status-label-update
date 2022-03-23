@@ -6,5 +6,5 @@ branding:
 runs:
   using: "composite"
   steps:
-    - run: pwd
+    - run: bundle exec ruby run.rb
       shell: bash
